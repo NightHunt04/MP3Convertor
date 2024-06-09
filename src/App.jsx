@@ -1,5 +1,6 @@
 import { LinearGradient } from 'react-text-gradients'
 import { Link } from 'react-router-dom'
+import MainOperation from './components/MainOperation'
 
 function App() {
   return (
@@ -15,7 +16,9 @@ function App() {
         This project is to convert and download the youtube videos into MP3
       </div>
 
-      <div className='absolute bottom-0 w-[50%]'>
+      <MainOperation />
+
+      <div className='absolute bottom-2 w-[90%] lg:w-[50%]'>
         <div className='flex items-center justify-between px-5'>
             <div className='flex flex-col items-start justify-center'>
               <p className='font-medium text-[12px] lg:text-[16px] mt-[40px] lg:mt-[50px]'>
@@ -24,13 +27,15 @@ function App() {
                 </LinearGradient>
                 Convertor
               </p>
-              <p className='text-[12px] lg:text-[15px]'>
+              <p className='text-[12px] lg:text-[15px] text-[#d1d1d1]'>
                 By Jeet
               </p>
             </div>
 
-          <div className='flex items-center justify-center'>
-            <Link to='https://instagram.com/jeet._004' target='_blank'><i className="fa-brands fa-instagram"></i></Link>
+          <div className='flex items-center text-[13px] lg:text-[16px] pt-[45px] lg:pt-[50px] justify-center gap-3'>
+            <Link to='https://instagram.com/jeet._004' target='_blank'><i className="fa-brands fa-instagram hover:opacity-80"></i></Link>
+            <Link to='https://github.com/NightHunt04' target='_blank'><i className="fa-brands fa-github hover:opacity-80"></i></Link>
+            <Link to='https://www.linkedin.com/in/jeet-bherwani-61aa37251/' target='_blank'><i className="fa-brands fa-linkedin hover:opacity-80"></i></Link>
           </div>
         </div>
       </div>
